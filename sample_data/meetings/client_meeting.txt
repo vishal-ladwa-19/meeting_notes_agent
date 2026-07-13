@@ -1,0 +1,21 @@
+Client Requirements Meeting
+
+Participants:
+Client Representative
+Business Analyst
+Project Manager
+Technical Lead
+
+Client: We need support for uploading PDF, DOCX, and TXT meeting transcripts.
+
+Business Analyst: We can also generate executive summaries and action items using AI.
+
+Technical Lead: Analytics dashboards with charts can also be included.
+
+Client: Reports should be downloadable in JSON, CSV, and Markdown formats.
+
+Project Manager: The first production release is planned for next month.
+
+Client: Security and API reliability are high priorities.
+
+Meeting concluded with approval to begin implementation.

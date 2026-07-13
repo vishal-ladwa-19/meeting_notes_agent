@@ -1,0 +1,25 @@
+Sprint Planning Meeting
+
+Participants:
+Alex (Scrum Master)
+Priya (Backend Developer)
+Rahul (Frontend Developer)
+Neha (QA Engineer)
+
+Alex: Welcome everyone. Let's plan Sprint 8.
+
+Rahul: I will implement the user profile page and complete it by Wednesday.
+
+Priya: I will build the authentication API and finish by Thursday.
+
+Neha: Testing for authentication and profile modules will begin on Friday.
+
+Alex: Our sprint goal is to complete authentication, profile management, and dashboard enhancements.
+
+Rahul: We should also improve the responsiveness of the dashboard.
+
+Priya: API documentation needs to be updated before sprint completion.
+
+Alex: Daily stand-ups will continue at 9:30 AM.
+
+Meeting ended.

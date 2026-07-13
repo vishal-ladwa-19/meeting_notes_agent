@@ -5,9 +5,9 @@ load_dotenv()
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
-MODEL = os.getenv(
+OPENROUTER_MODEL = os.getenv(
     "OPENROUTER_MODEL",
-    "google/gemini-2.5-flash"
+    "openai/gpt-4.1-mini"
 )
 
-BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
+BASE_URL = "https://openrouter.ai/api/v1"

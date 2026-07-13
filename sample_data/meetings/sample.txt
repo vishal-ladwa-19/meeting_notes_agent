@@ -1,0 +1,13 @@
+Project Meeting
+
+John:
+We need to finish the dashboard.
+
+Sarah:
+I'll complete it by Friday.
+
+Mike:
+Backend API will be completed tomorrow.
+
+Decision:
+Deploy next Monday.

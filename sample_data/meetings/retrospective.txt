@@ -1,0 +1,22 @@
+Sprint Retrospective
+
+Participants:
+Scrum Master
+Development Team
+QA Team
+
+Scrum Master: Let's discuss what went well during the sprint.
+
+Developer: The OpenRouter integration was completed successfully.
+
+QA: Most test cases passed. Parser improvements reduced document processing failures.
+
+Developer: We should improve documentation and increase automated test coverage.
+
+QA: Deployment should include additional end-to-end testing.
+
+Scrum Master: Action items include improving documentation, increasing test coverage, and optimizing performance.
+
+Everyone agreed to continue improving code quality during the next sprint.
+
+Meeting ended.

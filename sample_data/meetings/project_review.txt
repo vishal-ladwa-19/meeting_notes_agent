@@ -1,0 +1,36 @@
+Project Review Meeting
+Date: 13 July 2026
+Time: 10:00 AM
+
+Participants:
+John (Project Manager)
+Sarah (Frontend Developer)
+Mike (Backend Developer)
+Emily (QA Engineer)
+David (DevOps Engineer)
+
+John: Welcome everyone. Today we are reviewing the progress of the AI Meeting Intelligence Agent.
+
+Sarah: The Streamlit dashboard is almost complete. File uploads for TXT, PDF, and DOCX are working correctly. Only minor UI refinements remain.
+
+Mike: The OpenRouter API integration has been completed. The AI successfully extracts summaries, meeting decisions, action items, meeting type, risks, and recommendations.
+
+Emily: Regression testing has started. We identified an issue where scanned PDF files sometimes fail during text extraction.
+
+David: Deployment to Streamlit Community Cloud is planned for Friday after QA approval.
+
+John: Regression testing must be completed before Thursday evening.
+
+Sarah: I will finish dashboard improvements by Wednesday.
+
+Mike: I will fix the PDF parsing issue tomorrow morning.
+
+Emily: I will complete regression testing by Thursday.
+
+David: I will deploy the application on Friday.
+
+John: We also need to complete the README and GitHub documentation before deployment.
+
+Everyone agreed to conduct a final review meeting next Monday.
+
+Meeting concluded at 10:45 AM.
