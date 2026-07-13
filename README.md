@@ -1,47 +1,138 @@
 # 📝 AI Meeting Intelligence Agent
 
-An AI-powered Meeting Intelligence Agent built using **Streamlit**, **OpenRouter**, and **GPT-4.1 Mini** that automatically analyzes meeting transcripts, extracts key insights, generates action items, identifies risks, and produces downloadable reports.
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red)
+![OpenRouter](https://img.shields.io/badge/OpenRouter-GPT--4.1--Mini-green)
+![Pytest](https://img.shields.io/badge/Tests-Passing-success)
+
+An AI-powered **Meeting Intelligence Agent** built using **Python**, **Streamlit**, and **OpenRouter (GPT-4.1 Mini)**.
+
+The application automatically analyzes meeting transcripts, extracts key insights, identifies decisions, action items, risks, recommendations, and generates downloadable reports in multiple formats.
+
+---
+
+# 🌐 Live Demo
+
+**Streamlit App**
+
+https://meetingnotesagent.streamlit.app/
+
+---
+
+# 📂 GitHub Repository
+
+https://github.com/vishal-ladwa-19/meeting_notes_agent.git
+
+---
+
+# ⚡ Quick Start (For Evaluators)
+
+Want to test the project in under a minute?
+
+1. Launch the Streamlit application.
+2. Open the `sample_data/meetings/` folder.
+3. Upload **project_review.txt**.
+4. Click **Analyze Meeting**.
+5. Explore:
+   - Executive Summary
+   - Meeting Type
+   - Health Score
+   - Decisions
+   - Risks
+   - Recommendations
+   - Action Items
+   - Analytics Dashboard
+6. Download the generated JSON, CSV, or Markdown report.
 
 ---
 
 # 🚀 Features
 
-- 📂 Upload Meeting Transcripts
-  - TXT
-  - PDF
-  - DOCX
+## 📂 Multi-format Document Support
 
-- 🤖 AI Powered Analysis
-  - Executive Summary
-  - Meeting Type Detection
-  - Meeting Health Score
-  - Decisions
-  - Action Items
-  - Risks
-  - AI Recommendations
-  - Follow-up Detection
-
-- 📊 Analytics Dashboard
-  - Meeting Statistics
-  - Priority Distribution
-  - Owner Workload
-  - Interactive Charts
-
-- 📄 Report Generation
-  - Markdown Report
-  - JSON Export
-  - CSV Export
-
-- 📁 Analysis History
-
-- 📝 Logging
-
-- ✅ Unit Tests
+- TXT
+- PDF
+- DOCX
 
 ---
-## 📚 Sample Meeting Transcripts
 
-To help reviewers evaluate the project quickly, the repository includes sample meeting transcripts.
+## 🤖 AI Meeting Intelligence
+
+The application automatically extracts:
+
+- Executive Summary
+- Meeting Type
+- Meeting Health Score
+- Decisions
+- Action Items
+- Risks
+- AI Recommendations
+- Follow-up Required
+
+---
+
+## 📊 Interactive Dashboard
+
+- Meeting Statistics
+- Health Score
+- Decision Count
+- Action Item Count
+- Analytics Charts
+- Priority Distribution
+- Owner Workload
+
+---
+
+## 📄 Report Generation
+
+Generate reports in:
+
+- JSON
+- CSV
+- Markdown
+
+---
+
+## 📁 Analysis History
+
+Automatically stores generated reports locally.
+
+---
+
+## 📝 Logging
+
+Application logs important events for debugging and monitoring.
+
+---
+
+## ✅ Unit Testing
+
+Includes automated tests for:
+
+- Document Parsing
+- JSON Validation
+- Report Generation
+- History Module
+
+---
+
+# ⭐ Project Highlights
+
+- ✅ Multi-format document parsing
+- ✅ OpenRouter GPT-4.1 Mini integration
+- ✅ Structured AI outputs using JSON
+- ✅ Interactive analytics dashboard
+- ✅ Markdown report generation
+- ✅ JSON & CSV export
+- ✅ Logging
+- ✅ History tracking
+- ✅ Automated unit tests
+
+---
+
+# 📚 Sample Meeting Transcripts
+
+To simplify evaluation, sample meeting transcripts are included.
 
 ```
 sample_data/
@@ -52,70 +143,112 @@ sample_data/
     └── retrospective.txt
 ```
 
-These examples demonstrate different meeting scenarios and can be uploaded directly into the application.
-
-### Included Examples
+## Included Examples
 
 | File | Purpose |
 |------|---------|
-| project_review.txt | Software project review with risks and deployment planning |
-| sprint_planning.txt | Agile sprint planning session |
-| client_meeting.txt | Client requirements gathering meeting |
-| retrospective.txt | Sprint retrospective and process improvements |
+| project_review.txt | Software project review |
+| sprint_planning.txt | Sprint planning meeting |
+| client_meeting.txt | Client requirements discussion |
+| retrospective.txt | Sprint retrospective |
 
-### Quick Evaluation
+These files can be uploaded directly into the application.
 
-1. Start the application.
-2. Upload any transcript from `sample_data/meetings/`.
-3. Click **Analyze Meeting**.
-4. Review the generated:
-   - Executive Summary
-   - Meeting Type
-   - Health Score
-   - Decisions
-   - Risks
-   - Recommendations
-   - Action Items
-   - Analytics Dashboard
-5. Download the generated JSON, CSV, or Markdown report.
 ---
+
 # 🏗 Architecture
 
 ```
-                +------------------+
-                |   User Upload    |
-                +------------------+
-                         |
-                         |
-          +--------------v--------------+
-          | Document Parser             |
-          | TXT / PDF / DOCX            |
-          +--------------+--------------+
-                         |
-                         |
-          +--------------v--------------+
-          | Prompt Builder              |
-          +--------------+--------------+
-                         |
-                         |
-          +--------------v--------------+
-          | OpenRouter GPT-4.1 Mini     |
-          +--------------+--------------+
-                         |
-                         |
-          +--------------v--------------+
-          | Structured JSON             |
-          +--------------+--------------+
-                         |
-        +----------------+----------------+
-        |                |                |
-        |                |                |
-   Dashboard         Reports        Analytics
+                 User
+
+                  │
+
+                  ▼
+
+      Upload Meeting Transcript
+
+                  │
+
+                  ▼
+
+        Document Parser
+
+       TXT / PDF / DOCX
+
+                  │
+
+                  ▼
+
+         Prompt Builder
+
+                  │
+
+                  ▼
+
+     OpenRouter GPT-4.1 Mini
+
+                  │
+
+                  ▼
+
+      Structured JSON Output
+
+          │        │        │
+
+          ▼        ▼        ▼
+
+     Dashboard  Reports  Analytics
+
+                  │
+
+                  ▼
+
+          History & Logs
 ```
 
 ---
 
-# 📂 Folder Structure
+# 🔄 Application Workflow
+
+```
+User Upload
+
+↓
+
+Document Parsing
+
+↓
+
+Prompt Generation
+
+↓
+
+OpenRouter AI Analysis
+
+↓
+
+Structured JSON Validation
+
+↓
+
+Dashboard Generation
+
+↓
+
+Analytics
+
+↓
+
+Downloads
+
+↓
+
+History & Logs
+```
+
+---
+
+# 📂 Project Structure
 
 ```
 MeetingNotesAgent/
@@ -125,18 +258,24 @@ MeetingNotesAgent/
 ├── README.md
 ├── requirements.txt
 ├── .env.example
+├── .gitignore
+│
+├── assets/
+│   └── screenshots/
+│
+├── logs/
 │
 ├── models/
 │   └── schemas.py
+│
+├── output/
+│   └── history/
 │
 ├── prompts/
 │   └── system_prompt.txt
 │
 ├── sample_data/
-│
-├── output/
-│
-├── logs/
+│   └── meetings/
 │
 ├── tests/
 │
@@ -147,21 +286,21 @@ MeetingNotesAgent/
 
 # ⚙ Installation
 
-Clone the repository
+## Clone Repository
 
 ```bash
-git clone <repository-url>
+git https://github.com/vishal-ladwa-19/meeting_notes_agent.git
 
-cd MeetingNotesAgent
+cd meeting_notes_agent
 ```
 
-Create Virtual Environment
+---
+
+## Create Virtual Environment
 
 ```bash
 python -m venv venv
 ```
-
-Activate
 
 Windows
 
@@ -169,27 +308,34 @@ Windows
 venv\Scripts\activate
 ```
 
-Install Dependencies
+Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Create
+---
 
-```
-.env
-```
+## Configure Environment Variables
 
-Add
+Create a `.env` file.
 
 ```env
-OPENROUTER_API_KEY=your_api_key
-
+OPENROUTER_API_KEY=your_openrouter_api_key
 OPENROUTER_MODEL=openai/gpt-4.1-mini
 ```
 
-Run
+---
+
+## Run Application
 
 ```bash
 streamlit run app.py
@@ -199,12 +345,28 @@ streamlit run app.py
 
 # 🖥 Usage
 
-1. Upload TXT / PDF / DOCX
-2. Click Analyze Meeting
-3. Review Summary
-4. View Risks
-5. View Recommendations
-6. Download Reports
+1. Upload a TXT, PDF, or DOCX transcript.
+2. Or paste meeting text.
+3. Click **Analyze Meeting**.
+4. Review AI-generated insights.
+5. Download reports.
+
+---
+
+# 📈 Example AI Output
+
+The AI generates:
+
+- Executive Summary
+- Meeting Type
+- Meeting Health Score
+- Decisions
+- Risks
+- Recommendations
+- Action Items
+- JSON Export
+- CSV Export
+- Markdown Report
 
 ---
 
@@ -214,50 +376,112 @@ streamlit run app.py
 pytest
 ```
 
+Current Status
+
+```
+4 Passed
+0 Failed
+```
+
 ---
 
-
-
-# 📊 Technologies
+# 📊 Technologies Used
 
 - Python 3.11
 - Streamlit
 - OpenRouter API
 - GPT-4.1 Mini
 - Pandas
+- Pydantic
 - PyMuPDF
 - python-docx
-- Pydantic
+- python-dotenv
 - Pytest
 
 ---
 
 # 📸 Screenshots
 
-Add screenshots here.
+## Home Page
 
-Example
+![Home](assets/screenshots/home.png)
 
-```
-assets/screenshots/dashboard.png
+---
 
-assets/screenshots/analytics.png
-```
+## Dashboard
+
+![Dashboard](assets/screenshots/dashboard.png)
+
+---
+
+## Analytics
+
+![Analytics](assets/screenshots/analytics.png)
+
+---
+
+## Action Items
+
+![Action Items](assets/screenshots/action_items.png)
+
+---
+
+## Downloads
+
+![Downloads](assets/screenshots/downloads.png)
+
+---
+
+# 💡 Design Decisions
+
+### Why Streamlit?
+
+- Rapid development
+- Interactive dashboard
+- Easy deployment
+- Simple file uploads
+
+### Why OpenRouter?
+
+- Access to multiple LLMs
+- Flexible model selection
+- Cost-effective API access
+
 
 ---
 
 # 🔮 Future Improvements
 
-- Multi-language Support
-- Speaker Identification
-- Audio Transcription
-- Calendar Integration
-- Email Report Delivery
-- Meeting Comparison Dashboard
+- Audio meeting transcription
+- Speaker identification
+- Calendar integration
+- Email report delivery
+- Multi-language support
+- Database integration
+- Team collaboration
+- Authentication & user management
 
 ---
 
+
 # 👨‍💻 Developer
 
-Developed by **Vishal Ladwa**.
+**Vishal Ladwa**
 
+Computer Science Engineering Student
+
+AI • Python • Full Stack Development
+
+GitHub:https://github.com/vishal-ladwa-19
+
+LinkedIn: https://linkedin.com/in/vishal-ladwa
+
+---
+
+## ⭐ Acknowledgements
+
+- OpenRouter
+- OpenAI SDK
+- Streamlit
+- PyMuPDF
+- Python Community
